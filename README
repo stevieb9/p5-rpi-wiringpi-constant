@@ -17,6 +17,25 @@ DESCRIPTION
     This module optionally exports selections or all constant variables
     used within the RPi::WiringPi suite.
 
+CONSTANT EXPORT TAGS
+
+    These are the individual grouping of export tags. The :all tag includes
+    all of the below.
+
+ :pinmode
+
+        INPUT => 0,
+        OUTPUT => 1,
+        PWM_OUT => 2,
+        GPIO_CLOCK => 3,
+
+ :state
+
+        HIGH => 1,
+        LOW => 0,
+        ON => 1,
+        OFF => 0,
+
 AUTHOR
 
     Steve Bertrand, <steveb@cpan.org>
