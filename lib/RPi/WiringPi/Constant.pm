@@ -48,6 +48,27 @@ use constant {
     push @EXPORT_OK, @const;
     $EXPORT_TAGS{state} = \@const;
 }   
+
+use constant {
+    EDGE_SETUP => 0,
+    EDGE_FALLING => 1,
+    EDGE_RISING => 2,
+    EDGE_BOTH   => 3,
+};
+       
+{ # state
+
+    my @const = qw(
+        EDGE_SETUP
+        EDGE_FALLING
+        EDGE_RISING
+        EDGE_BOTH
+    );
+
+    push @EXPORT_OK, @const;
+    $EXPORT_TAGS{edge} = \@const;
+}   
+
 sub _vim{1;};
 1;
 __END__

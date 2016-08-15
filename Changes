@@ -1,5 +1,8 @@
 Revision history for RPi-WiringPi-Constant
 
+0.02    2016-08-15
+        - added edge detection constants
+
 0.01    Date/time
         First version, released on an unsuspecting world.
 
