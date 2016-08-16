@@ -30,16 +30,16 @@ use constant {
 }
 
 use constant {
-    UP => 1,
-    DOWN => 0,
-    OFF => 2,
+    PUD_UP => 1,
+    PUD_DOWN => 0,
+    PUD_OFF => 2,
 };
 
 { # pull
     my @const = qw(
-        UP
-        DOWN
-        OFF
+        PUD_UP
+        PUD_DOWN
+        PUD_OFF
     );
 
     push @EXPORT_OK, @const;
@@ -127,9 +127,9 @@ Pin modes.
 
 Internal pin pull up/down resistor state.
 
-    DOWN => 0,
-    UP  => 1,
-    OFF => 2,
+    PUD_DOWN => 0,
+    PUD_UP  => 1,
+    PUD_OFF => 2,
 
 =head2 :state
 
