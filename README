@@ -24,10 +24,20 @@ CONSTANT EXPORT TAGS
 
  :pinmode
 
+    Pin modes.
+
         INPUT => 0,
         OUTPUT => 1,
         PWM_OUT => 2,
         GPIO_CLOCK => 3,
+
+ :pull
+
+    Internal pin pull up/down resistor state.
+
+        DOWN => 0,
+        UP  => 1,
+        OFF => 2,
 
  :state
 
@@ -35,6 +45,16 @@ CONSTANT EXPORT TAGS
         LOW => 0,
         ON => 1,
         OFF => 0,
+
+ :interrupt
+
+    Edge detection states for interrupts.
+
+        EDGE_SETUP => 0,
+        EDGE_FALLING => 1,
+        EDGE_RISING => 2,
+        EDGE_BOTH   => 3,
+        
 
 AUTHOR
 

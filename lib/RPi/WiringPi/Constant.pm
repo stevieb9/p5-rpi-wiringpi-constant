@@ -30,10 +30,27 @@ use constant {
 }
 
 use constant {
-        HIGH => 1,
-        LOW => 0,
-        ON => 1,
-        OFF => 0,
+    UP => 1,
+    DOWN => 0,
+    OFF => 2,
+};
+
+{ # pull
+    my @const = qw(
+        UP
+        DOWN
+        OFF
+    );
+
+    push @EXPORT_OK, @const;
+    $EXPORT_TAGS{pull} = \@const;
+};
+
+use constant {
+    HIGH => 1,
+    LOW => 0,
+    ON => 1,
+    OFF => 0,
 };
        
 { # state
@@ -56,7 +73,7 @@ use constant {
     EDGE_BOTH   => 3,
 };
        
-{ # state
+{ # interrupt
 
     my @const = qw(
         EDGE_SETUP
@@ -99,10 +116,20 @@ of the below.
 
 =head2 :pinmode
 
+Pin modes.
+
     INPUT => 0,
     OUTPUT => 1,
     PWM_OUT => 2,
     GPIO_CLOCK => 3,
+
+=head2 :pull
+
+Internal pin pull up/down resistor state.
+
+    DOWN => 0,
+    UP  => 1,
+    OFF => 2,
 
 =head2 :state
 
@@ -111,6 +138,15 @@ of the below.
     ON => 1,
     OFF => 0,
 
+=head2 :interrupt
+
+Edge detection states for interrupts.
+
+    EDGE_SETUP => 0,
+    EDGE_FALLING => 1,
+    EDGE_RISING => 2,
+    EDGE_BOTH   => 3,
+    
 =head1 AUTHOR
 
 Steve Bertrand, E<lt>steveb@cpan.orgE<gt>
