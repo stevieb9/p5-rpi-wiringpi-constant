@@ -100,7 +100,7 @@ use constant {
     RPI_MODE_UNINIT => -1,
 };
 
-{ # interrupt
+{ # mode
 
     my @const = qw(
         RPI_MODE_WPI
