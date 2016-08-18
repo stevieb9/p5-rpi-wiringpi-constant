@@ -3,7 +3,7 @@ use warnings;
 
 use Test::More;
 
-use RPi::WiringPi::Constants qw(:state);
+use RPi::WiringPi::Constant qw(:state);
 
 
 is HIGH, 1, "HIGH ok";
