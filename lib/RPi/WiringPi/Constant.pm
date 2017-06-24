@@ -3,7 +3,7 @@ package RPi::WiringPi::Constant;
 use strict;
 use warnings;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 require Exporter;
 use base qw( Exporter );
