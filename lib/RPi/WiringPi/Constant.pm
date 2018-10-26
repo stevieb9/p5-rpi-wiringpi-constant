@@ -162,6 +162,8 @@ RPi::WiringPi::Constant - Constant variables for RPi::WiringPi
 
 =head1 SYNOPSIS
 
+    # THIS DISTRIBUTION IS DEPRECATED. PLEASE SEE THE "DESCRIPTION" SECTION
+
     use RPi::WiringPi::Constant (:all);
 
     # or...
@@ -171,6 +173,12 @@ RPi::WiringPi::Constant - Constant variables for RPi::WiringPi
     # etc
 
 =head1 DESCRIPTION
+
+THIS DISTRIBUTION/MODULE IS DEPRECATED. It'll continue to install and work, but
+it will not be updated or maintained further.
+
+PLEASE USE L<RPi::Const> FOR ANY PROJECTS MOVING FORWARD. If current projects
+break due to the use of this distribution, please switch over to L<RPi::Const>.
 
 This module optionally exports selections or all constant variables used within
 the C<RPi::WiringPi> suite.
